@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  </head>
+
+  <body>
+
+    <div class="center" align="middle">
+
+      <h1>Your perfect holiday is:</h1>
+
+      {% if best_location == 'Copenhagen' %}
+        <h3>Copenhagen</h3>
+        <img src="/static/Copenhagen.jpg">
+      {% endif %}
+
+      {% if best_location == 'Amsterdam' %}
+        <h3>Amsterdam</h3>
+        <img src="/static/Amsterdam.jpg">
+      {% endif %}
+
+      {% if best_location == 'Berlin' %}
+        <h3>Berlin</h3>
+        <img src="/static/Berlin.jpg">
+      {% endif %}
+
+      {% if best_location == 'Prague' %}
+        <h3>Prague</h3>
+        <img src="/static/Prague.jpg">
+      {% endif %}
+
+      {% if best_location == 'Barcelona' %}
+        <h3>Barcelona</h3>
+        <img src="/static/Barcelona.jpg">
+      {% endif %}
+
+      {% if best_location == 'Rome' %}
+        <h3>Rome</h3>
+        <img src="/static/Rome.jpg">
+      {% endif %}
+
+      {% if best_location == 'Budapest' %}
+        <h3>Budapest</h3>
+        <img src="/static/Budapest.jpg">
+      {% endif %}
+
+      {% if best_location == 'Athens' %}
+        <h3>Athens</h3>
+        <img src="/static/Athens.jpg">
+      {% endif %}
+
+      {% if best_location == 'Florence' %}
+        <h3>Florence</h3>
+        <img src="/static/Florence.jpg">
+      {% endif %}
+
+
+    </div>
+
+    <div style= 'text-align: center;'>
+      <form method="get" action="/">
+        <input class='searchbutton' type='submit' value='HOME'>
+      </form>
+    </div>
+
+    <h1>Other City Holidays</h1>
+
+    <table class="Holidays">
+      <tr>
+        <th colspan="3">PARTY</th>
+      </tr>
+      <tr>
+       <td>Copenhagen<img src="/static/Copenhagen.jpg" class="pic"></td>
+       <td>Amsterdam<img src="/static/Amsterdam.jpg" class="pic"></td>
+       <td>Berlin<img src="/static/Berlin.jpg" class="pic"></td>
+      </tr>
+      <tr class="price">
+        <td>£</td>
+        <td>££</td>
+        <td>£££</td>
+      </tr>
+    </table>
+
+    <table class="Holidays">
+      <tr>
+        <th colspan="3">ADVENTURE</th>
+      </tr>
+      <tr>
+        <td>Prague<img src="/static/Prague.jpg" class="pic"></td>
+        <td>Barcelona<img src="/static/Barcelona.jpg" class="pic"></td>
+        <td>Rome<img src="/static/Rome.jpg" class="pic"></td>
+      </tr>
+      <tr class="price">
+        <td>£</td>
+        <td>££</td>
+        <td>£££</td>
+      </tr>
+    </table>
+
+    <table class="Holidays">
+      <tr>
+        <th colspan="3">RELAX</th>
+      </tr>
+      <tr>
+        <td>Budapest<img src="/static/Budapest.jpg" class="pic"></td>
+        <td>Athens<img src="/static/Athens.jpg" class="pic"></td>
+        <td>Florence<img src="/static/Florence.jpg" class="pic"></td>
+      </tr>
+      <tr class="price">
+        <td>£</td>
+        <td>££</td>
+        <td>£££</td>
+      </tr>
+
+    </table>
+
+    <div class = "email">
+      <p>Send us your email for some great holiday deals! </p>
+      <div id="contact-form">
+        <form method="post" action="/signup">
+          <label for="email">Email address:</label>
+          <input type="email" id="email" name="email" required="required">
+          <input type="submit" value="Submit" id="submit-button">
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+
+  <div class="center" align="middle">
+
+    <h1>Your perfect holiday is:</h1>
+
+    {% if best_location == 'Magaluf' %}
+      <h3>Magaluf</h3>
+      <img src="/static/Maga.jpg">
+    {% endif %}
+
+    {% if best_location == 'Ayia Napa' %}
+      <h3>Ayia Napa</h3>
+      <img src="/static/Napa.jpg">
+    {% endif %}
+
+    {% if best_location == 'Ibiza' %}
+      <h3>Ibiza</h3>
+      <img src="/static/Ibiza.jpg">
+    {% endif %}
+
+    {% if best_location == 'Palma Majorca' %}
+      <h3>Palma Majorca</h3>
+      <img src="/static/Palma.jpg">
+    {% endif %}
+
+    {% if best_location == 'Crete' %}
+      <h3>Crete</h3>
+      <img src="/static/Crete.jpg">
+    {% endif %}
+
+    {% if best_location == 'Malta' %}
+      <h3>Malta</h3>
+      <img src="/static/Malta.jpg">
+    {% endif %}
+
+    {% if best_location == 'Faro' %}
+      <h3>Faro</h3>
+      <img src="/static/Faro.jpg">
+    {% endif %}
+
+    {% if best_location == 'Corfu' %}
+      <h3>Corfu</h3>
+      <img src="/static/Corfu.jpg">
+    {% endif %}
+
+    {% if best_location == 'Santorini' %}
+      <h3>Santorini</h3>
+      <img src="/static/Santorini.jpg">
+    {% endif %}
+
+
+  </div>
+
+  <div style= 'text-align: center;'>
+    <form method="get" action="/">
+      <input class='searchbutton' type='submit' value='HOME'>
+    </form>
+  </div>
+
+
+  <h1>Other City Holidays</h1>
+
+  <table class="Holidays">
+    <tr>
+      <th colspan="3">PARTY</th>
+    </tr>
+    <tr>
+      <td>Magaluf <img src="/static/Maga.jpg" class="pic"></td>
+      <td>Ayia napa <img src="/static/Napa.jpg" class="pic"></td>
+      <td>Ibiza <img src="/static/Ibiza.jpg" class="pic"></td>
+    </tr>
+    <tr class="price">
+      <td>£</td>
+      <td>££</td>
+      <td>£££</td>
+    </tr>
+  </table>
+
+  <table class="Holidays">
+    <tr>
+      <th colspan="3">ADVENTURE</th>
+    </tr>
+    <tr>
+      <td>Palma Majorca <img src="/static/Palma.jpg" class="pic"></td>
+      <td>Crete <img src="/static/Crete.jpg" class="pic"></td>
+      <td>Malta <img src="/static/Malta.jpg" class="pic"></td>
+    </tr>
+    <tr class="price">
+      <td>£</td>
+      <td>££</td>
+      <td>£££</td>
+    </tr>
+  </table>
+
+  <table class="Holidays">
+    <tr>
+      <th colspan="3">RELAX</th>
+    </tr>
+    <tr>
+      <td>Faro <img src="/static/Faro.jpg" class="pic"></td>
+      <td>Corfu <img src="/static/Corfu.jpg" class="pic"></td>
+      <td>Santorini <img src="/static/Santorini.jpg" class="pic"></td>
+    </tr>
+    <tr class="price">
+      <td>£</td>
+      <td>££</td>
+      <td>£££</td>
+    </tr>
+
+  </table>
+
+  <div class = "email">
+    <p>Send us your email for some great holiday deals! </p>
+    <div id="contact-form">
+      <form method="post" action="/signup">
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required="required">
+        <input type="submit" value="Submit" id="submit-button">
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

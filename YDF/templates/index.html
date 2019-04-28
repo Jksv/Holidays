@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <h1> Young Dumb Fun </h1>
+  <h2> Select your favourite holiday... </h2>
+  <link rel='stylesheet' type='text/css' href='/static/styles.css'>
+</head>
+
+<body>
+  <form method='post' action='/result'>
+
+  <table class = 'Hometable'>
+    <tr>
+      <th colspan='6'>LOCATION</th>
+    </tr>
+    <tr class='height'>
+        <td colspan='3'><input type='radio' name='location' id='beach' value='beach'> Beach<br></td>
+        <td colspan='3'><input type='radio' name='location' id='city' value='city'> City<br></td>
+    </tr>
+    <tr>
+      <th colspan='6'> TYPE </th>
+    </tr>
+    <tr class='height'>
+
+      <td colspan='2'><input type='radio' name='type' id='party' value='party'> Party<br></td>
+      <td colspan='2'><input type='radio' name='type' id='adventure' value='adventure'> Adventure<br></td>
+      <td colspan='2'><input type='radio' name='type' id='relax' value='relax'> Relax<br></td>
+
+    </tr>
+    <tr>
+      <th colspan='6'> BUDGET </th>
+    </tr>
+    <tr class='height'>
+
+      <td colspan='2'><input type='radio' name='budget' id='cheap' value='cheap'> Cheap and Cheerful<br></td>
+      <td colspan='2'><input type='radio' name='budget' id='medium' value='medium'> Won't break the bank<br></td>
+      <td colspan='2'><input type='radio' name='budget' id='expensive' value='expensive'> Cash to Splash<br></td>
+
+    </tr>
+  </table>
+
+  <div style= 'text-align: center;'>
+
+    <input class='searchbutton' type='submit' value='Find your perfect holiday' id='submit-button'>
+</div>
+</form>
+
+</body>
+</html>
